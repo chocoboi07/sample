@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: 	#181818;
+}
+header{
+    padding: 0px 30px;
+}
+.logo{
+    
+    color: #FFD700;
+    font-family: "Audiowide", sans-serif;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navlinks ul li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li, a{
+    color: white;
+}
+.active a{
+    color: #FFD700;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content h2{
+    color: #FFD700;
+    font-size: 90px;
+}
+.content h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+span{
+    color: rgb(47, 42, 42);
+    font-size: 70px;
+}
+.content p{
+    color: white;
+    font-size: 70px;
+}
+.content h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: #FFD700;
+    font-size: 90px;
+}
+.banner-image img{
+   width: 500px;
+   height: auto;
+}
+.content .line{
+    width: 36%;
+    height: 10px;
+    color: white;
+    background: white;
+}
+@media only screen and (max-width: 600px){
+    header{
+        padding: 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .logo{
+        font-size: 10px;
+        padding-left: 0px;
+    }
+    .navlinks ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .navlinks ul li,a {
+        font-size: 10px;
+        padding-left: 2px;
+    }
+    
+.navlinks ul li{
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    .nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 50%;
+    
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 5px solid white;
+    }
+    .content{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .content .line{
+        height: 2px;
+        
+    }
+    .content h3{
+        font-size: 2rem;
+        padding-left: 2px
+    }
+    .content h4{
+        padding-left: 2px;
+        font-size: 2rem;
+    }
+    .banner-image img{
+        width: 250px;
+        height: 300px;
+        margin-left: 30%;
+    }
+}
